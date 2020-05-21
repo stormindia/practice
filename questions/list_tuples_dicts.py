@@ -32,21 +32,27 @@
 # 5. Set = set(["a", "b", "c"])
 
 
-############ TUPLES #####################
-tup1 = (1,2,3,4,'a', [1,2,3])
+# ############ TUPLES #####################
+# tup1 = (1,2,3,4,'a', [1,2,3])
+#
+#
+# print(tup1[-1])
+#
+# tup1[-1][0] = 0 #==> works even though tuple is immutable
+#
+# print(tup1[-1])
+#
+# #tup1[1] = 22 ==> error
+#
+# #############################################
+#
+#
+# Dict = dict({1: 'Geeks', 2: 'For', 3:'Geeks'})
+#
+# print(Dict)
 
-
-print(tup1[-1])
-
-tup1[-1][0] = 0 #==> works even though tuple is immutable
-
-print(tup1[-1])
-
-#tup1[1] = 22 ==> error
-
-#############################################
-
-
-Dict = dict({1: 'Geeks', 2: 'For', 3:'Geeks'})
-
-print(Dict)
+#x, y, z = {'a':1, 'b':2}, {'c':4, 'b':3}, {**x, **y}   #error
+x = {'a':1, 'b':2}
+y = {'c':4, 'b':3}
+z =  {**x, **y}
+print(z)
