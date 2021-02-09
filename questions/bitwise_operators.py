@@ -5,9 +5,11 @@ b = 20 # 10100
 
 print(a & b)    # 0
 
-print(a or b)   # 10
+print(a or b)   # 10  not bitwise or (https://realpython.com/python-or-operator/)
+print(a | b) # 30
 
 print(b or a)   # 20
+print (b | a) # 30
 
 #NOT operator - returns one's compliment
 #https://www.geeksforgeeks.org/1s-2s-complement-binary-number/

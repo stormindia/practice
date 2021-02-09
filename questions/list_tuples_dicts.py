@@ -56,3 +56,4 @@ x = {'a':1, 'b':2}
 y = {'c':4, 'b':3}
 z =  {**x, **y}
 print(z)
+print (type(z))

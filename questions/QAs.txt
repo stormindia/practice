@@ -31,3 +31,8 @@ https://www.reddit.com/r/learnpython/comments/6c1t5m/sometimes_i_see_python_crea
 https://askubuntu.com/questions/487527/give-specific-user-permission-to-write-to-a-folder-using-w-notation
 https://www.washington.edu/computing/unix/permissions.html
 how to remove permission - https://www.pluralsight.com/blog/it-ops/linux-file-permissions
+
+
+10. an arr consist of 0s and 1s only -> sort all the 1s to left in 1 iteration (use 2 pointers)
+
+** 11. print all possible words from phone digits - https://www.geeksforgeeks.org/find-possible-words-phone-digits/
