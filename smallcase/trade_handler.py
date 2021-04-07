@@ -190,7 +190,7 @@ class trade_handle:
             current_price = ticker.current_share_price # is Rs 100 by default as mentioned in docs
             avg_price = p.buy_price
 
-            total += (current_price-avg_price)*shares
+            total += (current_price-avg_price)*p.shares
         
         return total
 
