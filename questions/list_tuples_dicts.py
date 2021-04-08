@@ -9,7 +9,7 @@
 # Tuples -
 # 1. Ordered
 # 2. Hetrogeneous
-# 3. Immutable
+# 3. Immutable (no addition/deletion allowed after creation)
 # 4. tup = ('python', 'geeks')  or tup = 'python', 'geeks'
 # 5. If an element of a tuple is Mutable in itself, then values inside that element can be changed
 # 6. for example, if an element is a list inside a tuple, then we cah change the values of that list
@@ -25,12 +25,11 @@
 #
 # Set -
 # 1. Unordered
-# 2. Mutable
-# 3. Has duplicate elements
+# 2. Sets are unchangeable, meaning that we cannot change the items after the set has been created.But we can add new elements
+# 3. no duplicate elements
 # 4. major advantage of using a set, as opposed to a list, is that it has a highly optimized method for
 #    checking whether a specific element is contained in the set. This is based on a data structure known as a hash table.
 # 5. Set = set(["a", "b", "c"])
-
 
 # ############ TUPLES #####################
 # tup1 = (1,2,3,4,'a', [1,2,3])
@@ -55,5 +54,13 @@
 x = {'a':1, 'b':2}
 y = {'c':4, 'b':3}
 z =  {**x, **y}
+zz = {**y, **x}
 print(z)
 print (type(z))
+# {'a': 1, 'b': 3, 'c': 4}
+# <class 'dict'>
+
+print(zz)
+#{'c': 4, 'b': 2, 'a': 1}
+
+

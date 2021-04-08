@@ -90,9 +90,9 @@ class trade_handle:
     def update_trade(self,user,trade_info):
         portfolio_state_id = trade_info.get('portfolio_state_id',None)
         shares = trade_info.get('shares',None)
-        if shares < 0:
+        if shares is not None and shares < 0:
             raise BadRequestException(message='invalid shares quantity')
-        ticker_id = trade_info.get('shares',None)
+        ticker_id = trade_info.get('ticker_id',None)
         buy_price = trade_info.get('buy_price',None)
 
         if shares is None and ticker_id is None and buy_price is None:
